@@ -1,3 +1,5 @@
+// time complexity Big O(n log n)
+
 function mergeSort(array) {
   if (array.length <= 1) return array;
   const mid = Math.floor(array.length / 2);
