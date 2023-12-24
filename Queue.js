@@ -69,8 +69,10 @@ class QueueObject {
   }
 
   dequeue() {
-    delete this.object[this.front];
-    this.front++;
+    if (!this.isEmpty()) {
+      delete this.object[this.front];
+      this.front++;
+    }
   }
 
   peek() {
