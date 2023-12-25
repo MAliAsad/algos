@@ -43,18 +43,53 @@ Definition: unordered collection of key value pairs. Both key and value can be o
 
 Set are iterables we can loop through them.
 
+Stack
+
+Use LIFO
+
+Abstract data type. It is defined by its behaviour
+
 Stack is basically a list and what makes it a stack is how it behaves
 
 Stack methods push, pop
 
 Most useful in tracing back the steps i.e maintaining history, undo operation
 
+Queue
 
-Stack
-
-Use LIFO
+Use FIFO
 
 Abstract data type. It is defined by its behaviour
+
+Queue is basically a list and what makes it a stack is how it behaves
+
+Queue methods enqueue, dequeue
+
+Most useful in maintaining sequence I.e callback queue
+
+Circular Queue
+
+Extended version of regular queue.
+
+The size of the queue is fixed and uses a single block in memory
+
+Also referred as circular buffer or ring buffer
+
+If the queue is full you can’t enqueue anymore I.e traffic lights, clocks
+
+Link List
+
+It’s a linear data structure that includes a series of connected nodes.
+
+Each node consists of a value and a pointer that points to the next node
+
+Insertion and deletion is faster
+
+3 main functions insertion, deletion and search
+
+Can be used to implement stacks and queues
+
+More practical example is image viewer
 
 Hash tables
 
