@@ -1,0 +1,33 @@
+Docker 
+
+Registry: hub.docker.com
+For testing: Play with docker
+
+Docker commands
+1. Docker build -t image-name . => create docker build
+2. Docker images => list of docker images
+3. Docker image rm imageId => remove docker image
+4. Docker image -q => all images id
+5. Docker run image-name => run a docker image 
+6. Docker run -it image-name
+7. Docker pull image-path-on-registry => pull a docker image
+8. docker push <image_name>
+9. Docker ps => List all running docker containers
+10. Docker ps -a => List all docker containers
+11. docker container rm $(docker container ls -a -q) => remove all containers
+12. docker image rm $(docker image ls -a -q)
+13. docker logs <container_id>
+14. docker inspect <container_id>
+15. docker cp <container_id>:<container_path> <host_path>: Copy files from a container to the host
+
+Workflow
+
+1. Dockerize the application by adding docker file
+2. Docker file create the image
+3. Container is started against the image
+4. That image gets pushed to docker registry and you can pull it anywhere and start the container
+
+Docker file
+
+1. Start with a base image
+
